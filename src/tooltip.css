@@ -1,0 +1,156 @@
+.mediumTooltip{
+	width:200px;
+	color:#666666;
+}
+.largeTooltip{
+	width:350px;
+	color:#666666;
+}
+#ttModalBackground {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#000;
+    opacity:.6;
+    -moz-opacity:.6;
+    -webkit-opacity:.6;
+    filter:alpha(opacity=60);
+    z-index:999;
+}
+.tooltipContainer {
+    position:absolute;
+    z-index:1000;
+    left:0;
+    top:-10000px;
+}
+
+/* table version */
+.tooltipContainer table {
+    border-collapse:collapse;
+    border:none;
+    font-size:inherit;
+}
+
+.tooltipContainer .ttArrow,
+.tooltipContainer .ttTopLeft,
+.tooltipContainer .ttTop,
+.tooltipContainer .ttTopRight,
+.tooltipContainer .ttBottomLeft,
+.tooltipContainer .ttBottom,
+.tooltipContainer .ttBottomRight {
+    background:url('img/tooltip_vertical.png') no-repeat;
+    _background:url('img/tooltip_vertical.gif') no-repeat;
+}
+.tooltipContainer .ttLeft,
+.tooltipContainer .ttRight {
+    background:url('img/tooltip_horizontal.png') no-repeat;
+    _background:url('img/tooltip_horizontal.gif') no-repeat;
+}
+
+.tooltipContainer .ttContent {
+    background-color:#ffffff;
+}
+
+.tooltipContainer .ttTopLeft,
+.tooltipContainer .ttTop,
+.tooltipContainer .ttTopRight,
+.tooltipContainer .ttBottomLeft,
+.tooltipContainer .ttBottom,
+.tooltipContainer .ttBottomRight {
+    height:24px;
+}
+
+.tooltipContainer .ttTopLeft,
+.tooltipContainer .ttTopRight,
+.tooltipContainer .ttLeft,
+.tooltipContainer .ttRight,
+.tooltipContainer .ttBottomLeft,
+.tooltipContainer .ttBottomRight {
+    width:24px;
+}
+
+/* Positions */
+.tooltipContainer .ttTopLeft {
+    background-position:0 -48px;
+}
+.tooltipContainer .ttTopRight {
+    background-position:-24px -48px;
+}
+.tooltipContainer .ttBottomLeft {
+    background-position:0 -72px;
+}
+.tooltipContainer .ttBottomRight {
+    background-position:-24px -72px;
+}
+.tooltipContainer .ttTop {
+    background-position:0 -96px;
+    background-repeat:repeat-x;
+}
+.tooltipContainer .ttBottom {
+    background-position:0 -120px;
+    background-repeat:repeat-x;
+}
+
+.tooltipContainer .ttLeft {
+    background-position:0 0;
+    background-repeat:repeat-y;
+}
+.tooltipContainer .ttRight {
+    background-position:-24px 0;
+    background-repeat:repeat-y;
+}
+
+.tooltipContainer .ttArrow {
+    position:absolute;
+    width:24px;
+    height:24px;
+    top:0;
+    left:24px;
+}
+
+.pos-bottom-right .ttArrow {
+    background-position:0 -35px;
+    height:13px;
+}
+.pos-bottom .ttArrow {
+    background-position:0 -35px;
+    left:50%;
+    margin-left:-8px;
+}
+
+.pos-top .ttArrow {
+    background-position:-24px -25px;
+    left:50%;
+    margin-left:-8px;
+    top:auto;
+    bottom:-12px;
+}
+
+.pos-top-right .ttArrow {
+    background-position:-24px -24px;
+    height:12px;
+}
+
+.pos-left .ttArrow {
+    background-position:-24px 0;
+    top:50%;
+    margin-top:-8px;
+    right:-11px;
+    left:auto;
+}
+
+.pos-right .ttArrow {
+    background-position:0 0;
+    top:50%;
+    margin-top:-8px;
+    left:-11px;
+    right:auto;
+}
+
+.pos-center .ttArrow,
+.pos-fixed .ttArrow {
+    display:none;
+}
+
